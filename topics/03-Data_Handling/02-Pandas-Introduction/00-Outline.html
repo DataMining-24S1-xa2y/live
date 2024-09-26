@@ -83,15 +83,11 @@
 										<li class="dropdown-header">Resources</li>
 										
 										<li >
-											<a href="../../../topics/02-Motivating_Example/index.html#01-Introduction_to_Classification">Introduction to Classification</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/02-Motivating_Example/index.html#02-Introduction_to_Data_Operations">Introduction to Data Operations</a>
+											<a href="../../../topics/03-Data_Handling/index.html#01-Python-Numpy">Python-Numpy</a>
 										</li>
 										
 										<li class="active">
-											<a href="../../../topics/02-Motivating_Example/index.html#10-practical">practical</a>
+											<a href="../../../topics/03-Data_Handling/index.html#02-Pandas-Introduction">Pandas-Introduction</a>
 										</li>
 										
 									</ul>
@@ -106,20 +102,12 @@
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<span>Auto-MPG</span
+										<span>Outline</span
 									</a>
 									<ul class="dropdown-menu" role="menu">
 										
-										<li >
-											<a href="00-Outline.html">Outline</a>
-										</li>
-										
 										<li class="active">
-											<a href="01-Auto-MPG.html">Auto-MPG</a>
-										</li>
-										
-										<li >
-											<a href="02-Iris.html">Iris</a>
+											<a href="00-Outline.html">Outline</a>
 										</li>
 										
 									</ul>
@@ -138,31 +126,53 @@
 		
 		<ul class="pager">
 			
-			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			<li class="previous disabled"><a>&larr; Previous</a></li>
 			
 			
 			
-			<li class="next"><a href="02-Iris.html">Next (Iris) &rarr;</a></li>
+			<li class="next disabled"><a>Next &rarr;</a></li>
 			
 		</ul>
 		
-		<h1>Using python-based tools to investigate the <em>Auto-MPG</em> dataset</h1>
-<p>Last week's practical included an exercise to investigate the well-known <em>Auto-MPG</em> dataset relating to cars available to American customers during the 1970s and 1980s.</p>
-<p>Several questions were posed, and students were invited to answer them using tools they were familiar with.</p>
-<p>In today's lab, I have shared a <a href="files/investigation.ipynb">notebook</a> that uses python-based tools to investigate the <em>Auto-MPG</em> data set and is heavily annotated, to explain what it is doing and why.</p>
-<p>For convenience, the <em>Auto-MPG</em> dataset that was shared previously can also be obtained from <a href="files/data/auto-mpg.csv">here</a>.</p>
-<p>Your task is to step through the notebook, running each cell in turn, learning about how the outputs are generated.</p>
-<p>Notice how analysis is based on operations applied to the <em>Auto-MPG</em> data after it has been loaded into a pandas dataframe.</p>
-<p>The notebook also shows how <code>matplotlib</code> and <code>seaborn</code> libraries can be used to visualise the data.</p>
-<p>For the rest of this module, we will use such python libraries to perform data exploration, model building, prediction and validation.</p>
+		<h1>Overview</h1>
+<p>This week's lecture is being presented in notebook format, instead of slides,
+because it is easier to show how pandas works by using it in practice.</p>
+<p>Today we look at pandas, which plays a huge role in the the python data science
+ecosystem. Typically, it provides the datasetructures that are used use to
+store and manipulate the data used for machine learning.</p>
+<p>Much of the attention later in the module is on machine learning algorithms and
+their interpretation and validation. However, and the machine learning pipeline
+and model building steps are heavily dependent on pandas.</p>
+<h2>Introduction to Pandas Series structure</h2>
+<p><a href="files/01-SeriesDataStructure.ipynb">This notebook</a> introduces the Pandas
+Series data structure and how it is used to store list and/or dictionary data.</p>
+<h2>Accessing data in Pandas Series</h2>
+<p><a href="files/02-QueryingSeries.ipynb">This notebook</a> describes indexing and other
+strategies for querying Pandas series.</p>
+<h2>Introduction to Dataframe data structure</h2>
+<p><a href="files/03-DataFrameDataStructure.ipynb">This notebook</a> introduces the Pandas
+Dataframe data structure and how it is used to store tabular data in a very
+flexible way.</p>
+<h2>Loading data into Dataframe data structure and examining its structure</h2>
+<p><a href="files/04-DataFrameIndexingAndLoading.ipynb">This notebook</a> describes how CSV
+files (a common format for ML data) can be loaded into a Pandas Dataframe and
+how various indexing strategies can be used to refine how data elements are
+accessed.</p>
+<h2>Accessing data in Pandas Series</h2>
+<p><a href="files/05-QueryingDataFrame.ipynb">This notebook</a> describes 2-D indexing and
+other access strategies for querying Pandas Dataframes.</p>
+<h2>Data</h2>
+<p>The dataset used in some of the notebooks can be found
+<a href="files/data/Admission_Predict.csv">here</a> (right click and save in a <code>data</code>
+subfolder of where you save the notebooks for this class).</p>
 		
 		<ul class="pager">
 			
-			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			<li class="previous disabled"><a>&larr; Previous</a></li>
 			
 			
 			
-			<li class="next"><a href="02-Iris.html">Next (Iris) &rarr;</a></li>
+			<li class="next disabled"><a>Next &rarr;</a></li>
 			
 		</ul>
 
